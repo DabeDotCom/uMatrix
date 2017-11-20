@@ -752,5 +752,17 @@
     "genericApplyChanges": {
         "message": "Apply changes",
         "description": "for generic 'Apply changes' buttons"
+    },
+    "settingsShowApplyButton":{
+        "message":"Show 'Apply Changes' button in popup",
+        "description": "English: Show 'Apply Changes' button in popup"
+    },
+    "buttonApplyChanges":{
+        "message":"Apply Changes",
+        "description":"English: Apply Changes"
+    },
+    "buttonApplyChangesTip" : {
+        "message": "Close uMatrix popup and reload current tab",
+        "description": "English: Close uMatrix popup and reload current tab"
     }
 }

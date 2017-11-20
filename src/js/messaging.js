@@ -250,6 +250,7 @@ var matrixSnapshot = function(pageStore, details) {
         url: pageStore.pageUrl,
         userSettings: {
             colorBlindFriendly: µmuser.colorBlindFriendly,
+            showApplyButton: µmuser.showApplyButton,
             displayTextSize: µmuser.displayTextSize,
             noTooltips: µmuser.noTooltips,
             popupScopeLevel: µmuser.popupScopeLevel

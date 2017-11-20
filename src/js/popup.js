@@ -1081,6 +1081,10 @@ function initMenuEnvironment() {
         'noTooltips',
         getUserSetting('noTooltips')
     );
+    uDom('body').css('font-size', getUserSetting('displayTextSize'));
+    uDom('body').toggleClass('colorblind', getUserSetting('colorBlindFriendly') === true);
+    uDom('#buttonApplyChanges').css('display', getUserSetting('showApplyButton') === true ? 'inline-block' : 'none');
+    uDom('#version').text(matrixSnapshot.appVersion || '');
 
     var prettyNames = matrixHeaderPrettyNames;
     var keys = Object.keys(prettyNames);
@@ -1216,6 +1220,11 @@ function buttonReloadHandler(ev) {
         tabId: matrixSnapshot.tabId,
         bypassCache: ev.ctrlKey || ev.metaKey || ev.shiftKey
     });
+}
+
+function buttonApplyChangesHandler(ev) {
+    buttonReloadHandler(ev);
+    vAPI.closePopup();
 }
 
 /******************************************************************************/
@@ -1586,6 +1595,10 @@ uDom('#matList').on('click', '.g4Meta', function(ev) {
         matrixSnapshot.collapseBlacklistedDomains
     );
 });
+
+uDom('#buttonApplyChanges').on('click', buttonApplyChangesHandler);
+
+resizePopup();
 
 /******************************************************************************/
 

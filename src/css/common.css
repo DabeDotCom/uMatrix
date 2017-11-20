@@ -67,6 +67,9 @@ body[dir="rtl"] .tip-anchor-left[data-i18n-tip]:hover::after {
     left: unset;
     right: 0;
     }
+.tip-anchor-above[data-i18n-tip]:hover:after {
+    top: -100%;
+    }
 body.noTooltips *[data-i18n-tip]::after {
     display: none;
     }

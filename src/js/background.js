@@ -142,6 +142,7 @@ return {
         popupCollapseBlacklistedDomains: false,
         popupScopeLevel: 'domain',
         processHyperlinkAuditing: true,
+        showApplyButton: true,
         selectedHostsFiles: [ '' ],
         selectedRecipeFiles: [ '' ],
         userHosts: {
