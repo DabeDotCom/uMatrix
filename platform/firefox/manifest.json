@@ -1,11 +1,11 @@
 {
     "applications": {
         "gecko": {
-            "id": "uMatrix@raymondhill.net",
+            "id": "uMatrix@dabe.com",
             "strict_min_version": "56.0a1"
         }
     },
-    "author": "Raymond Hill",
+    "author": "Dabrien 'Dabe' Murphy",
     "background": {
         "page": "background.html"
     },
